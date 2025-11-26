@@ -17,7 +17,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 echo '📦 Cloning code from public GitHub repo...'
-                git branch: 'main', url: "${REPO_URL}"
+                git branch: 'master', url: "${REPO_URL}"
             }
         }
 
