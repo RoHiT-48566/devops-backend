@@ -9,7 +9,6 @@ pipeline {
 
     options {
         timestamps()
-        ansiColor('xterm')
         buildDiscarder(logRotator(numToKeepStr: '20'))
     }
 
@@ -18,7 +17,6 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 echo '📦 Cloning code from public GitHub repo...'
-                // ✅ Correct syntax for Git checkout
                 git branch: 'main', url: "${REPO_URL}"
             }
         }
@@ -26,9 +24,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo '🐳 Building Docker image...'
-                sh '''
-                    docker build -t $DOCKER_IMAGE .
-                '''
+                sh 'docker build -t $DOCKER_IMAGE .'
             }
         }
 
