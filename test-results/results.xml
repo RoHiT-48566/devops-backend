@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.057" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-11-26T09:00:52" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Basic Sanity Check" timestamp="2025-11-26T09:00:52" tests="2" file="/Users/rohitmathi/Web Development/devops/backend/test/sample.test.js" time="0.057" failures="0">
+    <testcase name="Basic Sanity Check should confirm that 2 + 2 equals 4" time="0.000" classname="should confirm that 2 + 2 equals 4">
+    </testcase>
+    <testcase name="Basic Sanity Check should confirm that app can be imported" time="0.056" classname="should confirm that app can be imported">
+    </testcase>
+  </testsuite>
+</testsuites>
